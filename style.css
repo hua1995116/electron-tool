@@ -1,0 +1,66 @@
+body {
+	min-width: 860px;
+	background-color: #EEEFF5;
+}
+input {
+	outline:none
+}
+.main {
+	padding:5px;
+}
+.tool-list {
+	width: 200px;
+}
+.tool-list .tool-list-item {
+	font-size: 15px;
+	line-height: 30px;
+	text-align: center;
+	color: #418AA6;
+	cursor: pointer;
+	transition: color 0.5s;
+}
+.tool-list .tool-list-item.active {
+	color: rgba(5, 46, 46, 0.8);
+}
+.tool-list .tool-list-item:hover {
+	color: rgba(5, 46, 46, 0.8);
+}
+.tool-content {
+	padding-left: 30px;
+	border-left: 1px solid #ddd;
+}
+.textarea-item {
+	width: 180px;
+}
+.form-group input {
+	padding: .2rem .75rem;
+	background: rgba(255, 255, 255, 0.3);
+	color: #495057;
+	border-radius: .25rem;
+	border: 1px solid rgba(0,0,0,.15);
+}
+.form-group label {
+	color: #418AA6;
+}
+.textarea-item textarea {
+	background: rgba(255, 255, 255, 0.3);
+	resize: none;
+}
+.textarea-item textarea:focus, input:focus {
+	background: rgba(255, 255, 255, 0.5);
+	border-color: #1B5773;
+}
+.tool-submit {
+	width: 100%;
+}
+#tool-diffs-output {
+	height: 245px;
+}
+.tool-submit {
+	border-color: #1B5773;
+	background: #1B5773;
+}
+.tool-submit:hover {
+	border-color: rgba(27, 87, 115, 0.5);
+	background: rgba(27, 87, 115, 0.5);
+}

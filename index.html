@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>tools</title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.bootcss.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <!-- <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+    <script>if (typeof module === 'object') {window.jQuery = window.$ = module.exports;};</script> -->
+  </head>
+  <body>
+    <div class="tool-container clearfix">
+      <div class="tool-left float-left">
+        <div class="tool-list">
+          <div class="tool-list-item active" id="1">两组数据查找不同</div>
+          <div class="tool-list-item" id="2">两组数据查找相同</div>
+          <div class="tool-list-item" id="3">数据去重</div>
+          <div class="tool-list-item" id="4">数据去换行符</div>
+          <div class="tool-list-item" id="5">数据排序</div>
+          <div class="tool-list-item" id="6">数据长度</div>
+        </div>
+      </div>
+      <div class="tool-content float-left">
+        <div class="main row">
+          <div class="textarea-item col-md-6">
+            <div class="form-group">
+              <label for="tool-diffs-input-1">数据1</label>
+              <textarea class="form-control" id="tool-diffs-input-1" rows="4"></textarea>
+            </div>
+            <div class="form-group">
+              <label for="tool-diffs-input-2">数据2</label>
+              <textarea class="form-control" id="tool-diffs-input-2" rows="4"></textarea>
+            </div>
+          </div>
+          <div class="textarea-item col-md-6">
+            <div class="form-group">
+              <label for="tool-diffs-output">输出</label>
+              <textarea class="form-control" id="tool-diffs-output"></textarea>
+            </div>
+          </div>
+          <div class="col-md-12">
+            <div class="form-group">
+              <label for="tool-type">间隔</label>
+              <input type="" id="tool-type" name="">
+            </div>
+          </div>
+          <!-- <button id="btn">转化</button> -->
+        </div>
+        <button class="btn btn-primary tool-diffs-output tool-submit" id="tool-submit" type="submit">转化</button>
+      </div>
+    </div>
+    
+  </body>
+  <script src="./renderer.js"></script>
+</html>
